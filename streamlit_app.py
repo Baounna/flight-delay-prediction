@@ -54,7 +54,7 @@ with c3:
     WN = st.number_input("Southwest Airlines (WN)", 0.0)
 
 st.markdown("<br>", unsafe_allow_html=True)
-predict_col = st.columns([4,2,4])[1]
+predict_col = st.columns([4, 2, 4])[1]
 with predict_col:
     predict_btn = st.button("🚀 Prédire le retard")
 if predict_btn:

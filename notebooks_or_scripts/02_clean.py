@@ -3,7 +3,12 @@ from pyspark.sql.functions import col
 
 spark = SparkSession.builder.appName("FlightDelay-Clean").getOrCreate()
 
-df = spark.read.option("header", True).option("inferSchema", True).csv("data/flight_delays.csv")
+df = (
+    spark.read
+    .option("header", True)
+    .option("inferSchema", True)
+    .csv("data/flight_delays.csv")
+)
 
 # Supprimer lignes null
 df = df.dropna()

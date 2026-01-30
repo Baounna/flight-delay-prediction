@@ -12,4 +12,6 @@ def test_sample_has_expected_columns():
         header = next(reader)
 
     expected = {"Month", "AA"}
-    assert expected.issubset(set(header)), f"Header must include {expected}, got {header}"
+    assert expected.issubset(set(header)), (
+        f"Header must include {expected}, got {header}"
+    )

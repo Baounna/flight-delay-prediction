@@ -20,14 +20,17 @@ model = PipelineModel.load(MODEL_PATH)
 assembler = model.stages[0]
 REQUIRED_FEATURES = assembler.getInputCols()
 
+
 @app.route("/", methods=["GET"])
 def home():
     # نبعث لائحة الأعمدة للواجهة باش تولّد inputs تلقائياً
     return render_template("index.html", features=REQUIRED_FEATURES, label=LABEL_COL)
 
+
 @app.route("/health", methods=["GET"])
 def health():
     return jsonify({"status": "ok"})
+
 
 @app.route("/predict", methods=["POST"])
 def predict():
