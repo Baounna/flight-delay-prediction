@@ -75,10 +75,8 @@ CSV data -> cleaning -> Train pipeline (Spark) -> Saved Pipeline (models/)
 
 ## Screenshots
 
-*Add screenshots to `docs/images/` and replace links below.*
 
-- Streamlit UI (example): `docs/images/streamlit_screenshot.png`
-- Flask UI (index): `docs/images/flask_index.png`
+<img width="1416" height="775" alt="Screenshot 2026-01-30 at 14 29 24" src="https://github.com/user-attachments/assets/f51d5556-34ff-40c4-9ffb-436b49015352" />
 
 ---
 
