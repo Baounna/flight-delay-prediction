@@ -13,6 +13,23 @@
 
 This repo is curated to be portfolio-ready for recruiters and sharing on LinkedIn — it includes reproducible instructions, CI checks, and contribution guidance.
 
+**CI status:** The GitHub Actions pipeline runs linting and tests on every push/PR and is currently **passing**. ✅
+
+**Quick demo:** Start the Flask API and Streamlit UI locally to try the demo:
+
+```bash
+# install deps
+pip install -r requirements.txt
+
+# start API (default port 5001)
+python flask_app/app.py
+
+# in another terminal, run the UI
+streamlit run streamlit_app.py
+```
+
+Then open the Streamlit UI and click "Prédire le retard" to send a request to the Flask `/predict` endpoint.
+
 ---
 
 ## Architecture (simple diagram)
