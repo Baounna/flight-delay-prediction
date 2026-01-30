@@ -1,0 +1,24 @@
+# Byte-compiled / caches
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# macOS
+.DS_Store
+
+# Environment
+.env
+.venv/
+venv/
+
+# PySpark / data & models
+data/
+models/
+results/
+
+# Logs
+*.log
+
+# Jupyter
+.ipynb_checkpoints/
