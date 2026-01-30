@@ -27,9 +27,15 @@ def home():
     return render_template("index.html", features=REQUIRED_FEATURES, label=LABEL_COL)
 
 
+
 @app.route("/health", methods=["GET"])
 def health():
     return jsonify({"status": "ok"})
+
+
+@app.route("/predict", methods=["POST"])
+def predict():
+    data = request.get_json(force=True)
 
 
 @app.route("/predict", methods=["POST"])
@@ -45,6 +51,7 @@ def predict():
 
     pred = model.transform(df).select("prediction").collect()[0][0]
     return jsonify({"label": LABEL_COL, "prediction": float(pred)})
+
 
 if __name__ == "__main__":
     app.run(host="0.0.0.0", port=5001, debug=False)
