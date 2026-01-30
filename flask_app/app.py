@@ -27,15 +27,9 @@ def home():
     return render_template("index.html", features=REQUIRED_FEATURES, label=LABEL_COL)
 
 
-
 @app.route("/health", methods=["GET"])
 def health():
     return jsonify({"status": "ok"})
-
-
-@app.route("/predict", methods=["POST"])
-def predict():
-    data = request.get_json(force=True)
 
 
 @app.route("/predict", methods=["POST"])

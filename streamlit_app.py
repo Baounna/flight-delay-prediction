@@ -8,7 +8,7 @@ st.set_page_config(
 )
 
 st.markdown("""
-# ✈️ Flight Delay Prediction Dashboard  
+# ✈️ Flight Delay Prediction Dashboard
 ### Spark MLlib • Flask API • Streamlit Interface
 """)
 
