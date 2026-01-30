@@ -107,8 +107,8 @@ streamlit run streamlit_app.py
 ```
 FlightDelay_BigData/
 ├── flask_app/            # Flask server and templates
-├── data/                 # Dataset (ignored in git); sample included
-├── models/               # Saved Spark pipeline (ignored in git)
+├── data/                 # Dataset 
+├── models/               # Saved Spark pipeline 
 ├── notebooks_or_scripts/ # Cleaning, training scripts
 ├── results/              # Cleaned/exported CSV outputs
 ├── streamlit_app.py      # Streamlit demo
