@@ -144,4 +144,3 @@ MIT — see `LICENSE` for details.
 
 ---
 
-If you'd like, I can add a minimal GitHub Actions workflow, tests, and the contributing/PR templates now. ✅
